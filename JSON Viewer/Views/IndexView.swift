@@ -96,6 +96,7 @@ class IndexView: UIView {
                 e.autocapitalizationType = UITextAutocapitalizationType.None
                 e.autocorrectionType = UITextAutocorrectionType.No
                 e.placeholder = "http://example.com/data.json"
+                e.text = "http://keymaps-api.herokuapp.com/public/MS9xdW90ZXM=" // TODO
             
             case "viewButton":
                 let e = element as! UIButton
