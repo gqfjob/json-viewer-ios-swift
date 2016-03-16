@@ -121,37 +121,51 @@ class IndexView: UIView {
     func viewClickHandler() {
         let e = el(elements, key: "urlText") as! UITextField
         
-        // check if url is given
         if e.text == nil || e.text!.characters.count == 0 {
-            let overlay = SwiftOverlays.showBlockingTextOverlay("No URL given.")
-            let tap = UITapGestureRecognizer(target: overlay, action: "removeOverlays")
-            
-            overlay.addGestureRecognizer(tap)
-            
-            return
+            return showNotification("No URL given.")
+        } else {
+            return makeFetchRequest(e.text!)
         }
+    }
+    
+    
+    func makeFetchRequest(url: String) {
+        let future = fetch(url)
         
-        // show 'loading' overlay
-        SwiftOverlays.showBlockingWaitOverlayWithText("Please wait...")
-        
-        // make request
-        let future = fetch(e.text!)
+        showLoader()
         
         future.onSuccess { result in
-            SwiftOverlays.removeAllBlockingOverlays()
+            hideLoader()
             
             let e = el(self.elements, key: "notesText") as! UITextView
             e.text = result.object as! String
         }
         
         future.onFailure { error in
-            SwiftOverlays.removeAllBlockingOverlays()
-            
-            let overlay = SwiftOverlays.showBlockingTextOverlay("Could not parse the response from the given URL.")
-            let tap = UITapGestureRecognizer(target: overlay, action: "removeOverlays")
-            
-            overlay.addGestureRecognizer(tap)
+            hideLoader()
+            showNotification("Could not parse the response from the given URL.")
         }
+    }
+    
+    
+    //
+    // Notifications
+    //
+    func showNotification(msg: String) {
+        let overlay = SwiftOverlays.showBlockingTextOverlay(msg)
+        let tap = UITapGestureRecognizer(target: overlay, action: "removeOverlays")
+        
+        overlay.addGestureRecognizer(tap)
+    }
+    
+    
+    func showLoader() {
+        SwiftOverlays.showBlockingWaitOverlayWithText("Please wait...")
+    }
+    
+    
+    func hideLoader() {
+        SwiftOverlays.removeAllBlockingOverlays()
     }
     
 }
