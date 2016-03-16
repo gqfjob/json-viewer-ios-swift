@@ -20,6 +20,13 @@
 		B42C70F01C97C26B003AA87C /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = B42C70EF1C97C26B003AA87C /* Cartfile */; };
 		B42C70FB1C988394003AA87C /* Cartography.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42C70FA1C988394003AA87C /* Cartography.framework */; };
 		B42C70FC1C988394003AA87C /* Cartography.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B42C70FA1C988394003AA87C /* Cartography.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B46E6C691C99D6E2000E580E /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C70C61C97BFDD003AA87C /* App.swift */; };
+		B46E6C6F1C99D90A000E580E /* IndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E6C6E1C99D90A000E580E /* IndexController.swift */; };
+		B46E6C7D1C99DA64000E580E /* elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E6C791C99DA64000E580E /* elements.swift */; };
+		B46E6C7E1C99DA64000E580E /* fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E6C7A1C99DA64000E580E /* fetch.swift */; };
+		B46E6C7F1C99DA64000E580E /* future.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E6C7B1C99DA64000E580E /* future.swift */; };
+		B46E6C801C99DA64000E580E /* overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E6C7C1C99DA64000E580E /* overlay.swift */; };
+		B46E6C831C99DA83000E580E /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46E6C821C99DA83000E580E /* IndexView.swift */; };
 		B4F73AB31C98AE87002EA4DE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F73AB21C98AE87002EA4DE /* Result.framework */; };
 		B4F73AB41C98AE87002EA4DE /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4F73AB21C98AE87002EA4DE /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4F73AB61C98AE9F002EA4DE /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F73AB51C98AE9F002EA4DE /* BrightFutures.framework */; };
@@ -27,9 +34,6 @@
 		B4F73ABE1C98C726002EA4DE /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F73ABD1C98C726002EA4DE /* Bond.framework */; };
 		B4F73ABF1C98C726002EA4DE /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4F73ABD1C98C726002EA4DE /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4F73AC51C98D88A002EA4DE /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = B4F73AC21C98D88A002EA4DE /* Controllers */; };
-		B4F73AC61C98D88A002EA4DE /* Library in Resources */ = {isa = PBXBuildFile; fileRef = B4F73AC31C98D88A002EA4DE /* Library */; };
-		B4F73AC71C98D88A002EA4DE /* Views in Resources */ = {isa = PBXBuildFile; fileRef = B4F73AC41C98D88A002EA4DE /* Views */; };
-		B4F73AC81C99C24E002EA4DE /* Controllers in Sources */ = {isa = PBXBuildFile; fileRef = B4F73AC21C98D88A002EA4DE /* Controllers */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,12 +69,16 @@
 		B42C70E31C97C24E003AA87C /* Swiftz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Swiftz.framework; path = Carthage/Build/iOS/Swiftz.framework; sourceTree = "<group>"; };
 		B42C70EF1C97C26B003AA87C /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		B42C70FA1C988394003AA87C /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
+		B46E6C6E1C99D90A000E580E /* IndexController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexController.swift; path = Controllers/IndexController.swift; sourceTree = "<group>"; };
+		B46E6C791C99DA64000E580E /* elements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = elements.swift; path = Library/elements.swift; sourceTree = "<group>"; };
+		B46E6C7A1C99DA64000E580E /* fetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = fetch.swift; path = Library/fetch.swift; sourceTree = "<group>"; };
+		B46E6C7B1C99DA64000E580E /* future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = future.swift; path = Library/future.swift; sourceTree = "<group>"; };
+		B46E6C7C1C99DA64000E580E /* overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = overlay.swift; path = Library/overlay.swift; sourceTree = "<group>"; };
+		B46E6C821C99DA83000E580E /* IndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexView.swift; path = Views/IndexView.swift; sourceTree = "<group>"; };
 		B4F73AB21C98AE87002EA4DE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		B4F73AB51C98AE9F002EA4DE /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
 		B4F73ABD1C98C726002EA4DE /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
-		B4F73AC21C98D88A002EA4DE /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
-		B4F73AC31C98D88A002EA4DE /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Library; sourceTree = "<group>"; };
-		B4F73AC41C98D88A002EA4DE /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
+		B4F73AC21C98D88A002EA4DE /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Controllers; path = "/Users/stevenvandevelde/Xcode/JSON Viewer/JSON Viewer/Controllers"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +129,9 @@
 			isa = PBXGroup;
 			children = (
 				B42C70F31C97D88E003AA87C /* Assets */,
-				B4F73AC21C98D88A002EA4DE /* Controllers */,
-				B4F73AC31C98D88A002EA4DE /* Library */,
-				B4F73AC41C98D88A002EA4DE /* Views */,
+				B46E6C701C99D9EE000E580E /* Controllers */,
+				B46E6C811C99DA6D000E580E /* Library */,
+				B46E6C841C99DA87000E580E /* Views */,
 				B42C70C61C97BFDD003AA87C /* App.swift */,
 				B42C70CF1C97BFDD003AA87C /* Info.plist */,
 			);
@@ -137,6 +145,33 @@
 				B42C70CC1C97BFDD003AA87C /* LaunchScreen.storyboard */,
 			);
 			name = Assets;
+			sourceTree = "<group>";
+		};
+		B46E6C701C99D9EE000E580E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B46E6C6E1C99D90A000E580E /* IndexController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		B46E6C811C99DA6D000E580E /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				B46E6C791C99DA64000E580E /* elements.swift */,
+				B46E6C7A1C99DA64000E580E /* fetch.swift */,
+				B46E6C7B1C99DA64000E580E /* future.swift */,
+				B46E6C7C1C99DA64000E580E /* overlay.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		B46E6C841C99DA87000E580E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B46E6C821C99DA83000E580E /* IndexView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,8 +236,6 @@
 			files = (
 				B42C70CB1C97BFDD003AA87C /* Assets.xcassets in Resources */,
 				B4F73AC51C98D88A002EA4DE /* Controllers in Resources */,
-				B4F73AC61C98D88A002EA4DE /* Library in Resources */,
-				B4F73AC71C98D88A002EA4DE /* Views in Resources */,
 				B42C70F01C97C26B003AA87C /* Cartfile in Resources */,
 				B42C70CE1C97BFDD003AA87C /* LaunchScreen.storyboard in Resources */,
 			);
@@ -215,7 +248,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4F73AC81C99C24E002EA4DE /* Controllers in Sources */,
+				B46E6C831C99DA83000E580E /* IndexView.swift in Sources */,
+				B46E6C7E1C99DA64000E580E /* fetch.swift in Sources */,
+				B46E6C7D1C99DA64000E580E /* elements.swift in Sources */,
+				B46E6C801C99DA64000E580E /* overlay.swift in Sources */,
+				B46E6C6F1C99D90A000E580E /* IndexController.swift in Sources */,
+				B46E6C691C99D6E2000E580E /* App.swift in Sources */,
+				B46E6C7F1C99DA64000E580E /* future.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

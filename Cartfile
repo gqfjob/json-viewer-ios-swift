@@ -1,8 +1,10 @@
 github "Alamofire/Alamofire" ~> 3.2.0
 github "delba/JASON" >= 1.0.0
+github "natestedman/TreeSourceView" "c44e596db1c23926978e434c654c5de894029696"
 github "peterprokop/SwiftOverlays" ~> 1.0.0
 github "SwiftBond/Bond" ~> 4.0
 github "Thomvis/BrightFutures" ~> 3.3.0
 github "typelift/Swiftz" ~> 0.4.0
 github "WeZZard/Cartography"
+
 

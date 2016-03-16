@@ -18,6 +18,7 @@ class IndexView: UIView {
     
 
     convenience init() {
+        print(UIScreen.mainScreen().bounds.width)
         self.init(frame: UIScreen.mainScreen().bounds)
         
         render()
@@ -55,24 +56,24 @@ class IndexView: UIView {
         constrain(
             el(elements, idx: 1) as! UITextField,
             el(elements, idx: 2) as! UIButton
-            ) { urlText, viewButton in
-                let s = viewButton.superview!
+        ) { urlText, viewButton in
+            let s = viewButton.superview!
                 
-                viewButton.top == urlText.bottom + 9
-                viewButton.trailingMargin == s.trailingMargin - 8
+            viewButton.top == urlText.bottom + 9
+            viewButton.trailingMargin == s.trailingMargin - 8
         }
         
         // -> notesText
         constrain(
             el(elements, idx: 2) as! UIButton,
             el(elements, idx: 3) as! UITextView
-            ) { viewButton, notesText in
-                let s = notesText.superview!
+        ) { viewButton, notesText in
+            let s = notesText.superview!
                 
-                notesText.top == viewButton.bottom + 24
-                notesText.bottom == s.bottom - 24
-                notesText.leadingMargin == s.leadingMargin + 8
-                notesText.trailingMargin == s.trailingMargin - 8
+            notesText.top == viewButton.bottom + 24
+            notesText.bottom == s.bottom - 24
+            notesText.leadingMargin == s.leadingMargin + 8
+            notesText.trailingMargin == s.trailingMargin - 8
         }
         
         // event handlers
@@ -106,7 +107,7 @@ class IndexView: UIView {
                 e.font = UIFont.preferredFontForTextStyle(UIFontTextStyleCaption1)
                 e.textColor = UIColor.lightGrayColor()
                 e.text =
-                    "The response of the request sent to the given URL" +
+                    "The response of the request sent to the given URL " +
                     "must have the `application/json` content-type.\n\n" +
                     "Demo URL: http://keymaps-api.herokuapp.com/public/MS9xdW90ZXM="
             
@@ -135,15 +136,15 @@ class IndexView: UIView {
         showLoader()
         
         future.onSuccess { result in
-            hideLoader()
+            self.hideLoader()
             
             let e = el(self.elements, key: "notesText") as! UITextView
             e.text = result.object as! String
         }
         
         future.onFailure { error in
-            hideLoader()
-            showNotification("Could not parse the response from the given URL.")
+            self.hideLoader()
+            self.showNotification("Could not parse the response from the given URL.")
         }
     }
     
