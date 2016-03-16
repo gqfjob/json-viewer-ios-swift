@@ -18,7 +18,6 @@ class IndexView: UIView {
     
 
     convenience init() {
-        print(UIScreen.mainScreen().bounds.width)
         self.init(frame: UIScreen.mainScreen().bounds)
         
         render()
@@ -29,8 +28,6 @@ class IndexView: UIView {
     // Render
     //
     func render() {
-        self.backgroundColor = .whiteColor()
-        
         elements.forEach { e in
             self.style(e.0, element: e.1)
             self.addSubview(e.1 as! UIView)
@@ -96,6 +93,8 @@ class IndexView: UIView {
                 let e = element as! UITextField
                 e.font = UIFont.systemFontOfSize(14)
                 e.borderStyle = UITextBorderStyle.RoundedRect
+                e.autocapitalizationType = UITextAutocapitalizationType.None
+                e.autocorrectionType = UITextAutocorrectionType.No
                 e.placeholder = "http://example.com/data.json"
             
             case "viewButton":

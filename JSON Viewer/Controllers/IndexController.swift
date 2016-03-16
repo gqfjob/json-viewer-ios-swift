@@ -25,6 +25,7 @@ public class IndexController: UIViewController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        view.backgroundColor = UIColor.whiteColor()
         view.addSubview( IndexView() )
     }
     
