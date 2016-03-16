@@ -7,12 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B42C70C71C97BFDD003AA87C /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C70C61C97BFDD003AA87C /* App.swift */; };
 		B42C70CB1C97BFDD003AA87C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B42C70CA1C97BFDD003AA87C /* Assets.xcassets */; };
 		B42C70CE1C97BFDD003AA87C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B42C70CC1C97BFDD003AA87C /* LaunchScreen.storyboard */; };
-		B42C70D81C97C094003AA87C /* fetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C70D51C97C094003AA87C /* fetch.swift */; };
-		B42C70D91C97C094003AA87C /* IndexController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C70D61C97C094003AA87C /* IndexController.swift */; };
-		B42C70DA1C97C094003AA87C /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B42C70D71C97C094003AA87C /* IndexView.swift */; };
 		B42C70E41C97C24E003AA87C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42C70DF1C97C24E003AA87C /* Alamofire.framework */; };
 		B42C70E51C97C24E003AA87C /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B42C70DF1C97C24E003AA87C /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B42C70E61C97C24E003AA87C /* JASON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B42C70E01C97C24E003AA87C /* JASON.framework */; };
@@ -28,11 +24,12 @@
 		B4F73AB41C98AE87002EA4DE /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4F73AB21C98AE87002EA4DE /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B4F73AB61C98AE9F002EA4DE /* BrightFutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F73AB51C98AE9F002EA4DE /* BrightFutures.framework */; };
 		B4F73AB71C98AE9F002EA4DE /* BrightFutures.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4F73AB51C98AE9F002EA4DE /* BrightFutures.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B4F73ABA1C98B0C9002EA4DE /* future.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F73AB91C98B0C9002EA4DE /* future.swift */; };
-		B4F73ABC1C98BAEC002EA4DE /* elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F73ABB1C98BAEC002EA4DE /* elements.swift */; };
 		B4F73ABE1C98C726002EA4DE /* Bond.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F73ABD1C98C726002EA4DE /* Bond.framework */; };
 		B4F73ABF1C98C726002EA4DE /* Bond.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4F73ABD1C98C726002EA4DE /* Bond.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B4F73AC11C98D473002EA4DE /* overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4F73AC01C98D473002EA4DE /* overlay.swift */; };
+		B4F73AC51C98D88A002EA4DE /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = B4F73AC21C98D88A002EA4DE /* Controllers */; };
+		B4F73AC61C98D88A002EA4DE /* Library in Resources */ = {isa = PBXBuildFile; fileRef = B4F73AC31C98D88A002EA4DE /* Library */; };
+		B4F73AC71C98D88A002EA4DE /* Views in Resources */ = {isa = PBXBuildFile; fileRef = B4F73AC41C98D88A002EA4DE /* Views */; };
+		B4F73AC81C99C24E002EA4DE /* Controllers in Sources */ = {isa = PBXBuildFile; fileRef = B4F73AC21C98D88A002EA4DE /* Controllers */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,9 +59,6 @@
 		B42C70CA1C97BFDD003AA87C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B42C70CD1C97BFDD003AA87C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B42C70CF1C97BFDD003AA87C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B42C70D51C97C094003AA87C /* fetch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = fetch.swift; sourceTree = "<group>"; };
-		B42C70D61C97C094003AA87C /* IndexController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexController.swift; sourceTree = "<group>"; };
-		B42C70D71C97C094003AA87C /* IndexView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
 		B42C70DF1C97C24E003AA87C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		B42C70E01C97C24E003AA87C /* JASON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JASON.framework; path = Carthage/Build/iOS/JASON.framework; sourceTree = "<group>"; };
 		B42C70E21C97C24E003AA87C /* SwiftOverlays.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftOverlays.framework; path = Carthage/Build/iOS/SwiftOverlays.framework; sourceTree = "<group>"; };
@@ -73,10 +67,10 @@
 		B42C70FA1C988394003AA87C /* Cartography.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cartography.framework; path = Carthage/Build/iOS/Cartography.framework; sourceTree = "<group>"; };
 		B4F73AB21C98AE87002EA4DE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 		B4F73AB51C98AE9F002EA4DE /* BrightFutures.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BrightFutures.framework; path = Carthage/Build/iOS/BrightFutures.framework; sourceTree = "<group>"; };
-		B4F73AB91C98B0C9002EA4DE /* future.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = future.swift; sourceTree = "<group>"; };
-		B4F73ABB1C98BAEC002EA4DE /* elements.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = elements.swift; sourceTree = "<group>"; };
 		B4F73ABD1C98C726002EA4DE /* Bond.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bond.framework; path = Carthage/Build/iOS/Bond.framework; sourceTree = "<group>"; };
-		B4F73AC01C98D473002EA4DE /* overlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = overlay.swift; sourceTree = "<group>"; };
+		B4F73AC21C98D88A002EA4DE /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Controllers; sourceTree = "<group>"; };
+		B4F73AC31C98D88A002EA4DE /* Library */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Library; sourceTree = "<group>"; };
+		B4F73AC41C98D88A002EA4DE /* Views */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Views; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,58 +120,23 @@
 		B42C70C51C97BFDD003AA87C /* JSON Viewer */ = {
 			isa = PBXGroup;
 			children = (
-				B42C70F31C97D88E003AA87C /* assets */,
-				B42C70DD1C97C0BE003AA87C /* controllers */,
-				B42C70DE1C97C0C6003AA87C /* views */,
-				B42C70DB1C97C09E003AA87C /* lib */,
+				B42C70F31C97D88E003AA87C /* Assets */,
+				B4F73AC21C98D88A002EA4DE /* Controllers */,
+				B4F73AC31C98D88A002EA4DE /* Library */,
+				B4F73AC41C98D88A002EA4DE /* Views */,
 				B42C70C61C97BFDD003AA87C /* App.swift */,
 				B42C70CF1C97BFDD003AA87C /* Info.plist */,
 			);
 			path = "JSON Viewer";
 			sourceTree = "<group>";
 		};
-		B42C70DB1C97C09E003AA87C /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				B4F73AB81C98B0B0002EA4DE /* alamofire */,
-				B42C70D51C97C094003AA87C /* fetch.swift */,
-				B4F73ABB1C98BAEC002EA4DE /* elements.swift */,
-				B4F73AC01C98D473002EA4DE /* overlay.swift */,
-			);
-			name = lib;
-			sourceTree = "<group>";
-		};
-		B42C70DD1C97C0BE003AA87C /* controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B42C70D61C97C094003AA87C /* IndexController.swift */,
-			);
-			name = controllers;
-			sourceTree = "<group>";
-		};
-		B42C70DE1C97C0C6003AA87C /* views */ = {
-			isa = PBXGroup;
-			children = (
-				B42C70D71C97C094003AA87C /* IndexView.swift */,
-			);
-			name = views;
-			sourceTree = "<group>";
-		};
-		B42C70F31C97D88E003AA87C /* assets */ = {
+		B42C70F31C97D88E003AA87C /* Assets */ = {
 			isa = PBXGroup;
 			children = (
 				B42C70CA1C97BFDD003AA87C /* Assets.xcassets */,
 				B42C70CC1C97BFDD003AA87C /* LaunchScreen.storyboard */,
 			);
-			name = assets;
-			sourceTree = "<group>";
-		};
-		B4F73AB81C98B0B0002EA4DE /* alamofire */ = {
-			isa = PBXGroup;
-			children = (
-				B4F73AB91C98B0C9002EA4DE /* future.swift */,
-			);
-			name = alamofire;
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,8 +199,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42C70F01C97C26B003AA87C /* Cartfile in Resources */,
 				B42C70CB1C97BFDD003AA87C /* Assets.xcassets in Resources */,
+				B4F73AC51C98D88A002EA4DE /* Controllers in Resources */,
+				B4F73AC61C98D88A002EA4DE /* Library in Resources */,
+				B4F73AC71C98D88A002EA4DE /* Views in Resources */,
+				B42C70F01C97C26B003AA87C /* Cartfile in Resources */,
 				B42C70CE1C97BFDD003AA87C /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,13 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B42C70D91C97C094003AA87C /* IndexController.swift in Sources */,
-				B42C70D81C97C094003AA87C /* fetch.swift in Sources */,
-				B42C70DA1C97C094003AA87C /* IndexView.swift in Sources */,
-				B4F73AC11C98D473002EA4DE /* overlay.swift in Sources */,
-				B4F73ABA1C98B0C9002EA4DE /* future.swift in Sources */,
-				B4F73ABC1C98BAEC002EA4DE /* elements.swift in Sources */,
-				B42C70C71C97BFDD003AA87C /* App.swift in Sources */,
+				B4F73AC81C99C24E002EA4DE /* Controllers in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

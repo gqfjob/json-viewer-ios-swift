@@ -1,7 +1,7 @@
 import UIKit
 
 
-class IndexController: UIViewController {
+public class IndexController: UIViewController {
     
     required init?(coder: NSCoder) {
         super.init(coder: coder);
